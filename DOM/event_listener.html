@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>addEventListener</h2>
+    <button id="click">click me</button>
+    <p id="pa"></p>
+    <script>
+        document.getElementById('click').addEventListener('mouseover',fun)
+        function fun(){
+            let a =document.getElementById('pa')
+            a.innerHTML="hello world <br> welcome to wonderland.com"
+            a.style.cssText=`background-color:lightgreen;padding:9px;font-style;font-style:italic;font-weight:bold;
+            border-radius:4px;font-size:25px`
+        }
+
+        
+            </script>
+</body>
+</html>

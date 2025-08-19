@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h2>window property</h2>
+<button onclick="openw()">open window</button>
+<button onclick="closew()">close window</button>
+<script>
+    let mywindow;
+    function openw() {
+        mywindow = window.open("", "mywindow", "width=500,height=500")
+        mywindow.document.write("this is the new window")
+        mywindow.prompt("s")
+        setTimeout(() => {
+            mywindow.close()
+        }, 5000);
+    }
+</script>
+
+<body>
+</body>
+
+</html>
+
+
+
+<!-- <h2>Open new window</h2>
+<button onclick="opernwindow()">google</button>
+<script>
+    function opernwindow() {
+        
+    alert("new window is opening....")
+    window.openw("https://www.google.com", "-blank", "width=700,height=600")
+    }
+</script> -->
+<!-- function closew() {
+    if (mywindow) {
+        mywindow.close();
+    }
+} -->
