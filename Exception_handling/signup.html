@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+</head>
+<body>
+    <h3>SIGNUP</h3>
+    <form id="signup_form" onsubmit="submit_signup(event)">
+        <h4>Username</h4>
+        <input type="text" id="username" placeholder="Enter your username" required>
+
+        <h4>Email</h4>
+        <input type="email" id="email" placeholder="Enter your email id" required>
+
+        <h4>Password</h4>
+        <input type="password" id="password" placeholder="Enter your password" required>
+
+        <h4>Confirm Password</h4>
+        <input type="password" id="confirm_password" placeholder="Re-enter your password" required>
+        <br><br>
+
+        <input type="submit" value="Signup">
+        <input type="button" value="Back to Login" onclick="backToLogin()">
+    </form>
+
+    <script type="text/javascript">
+        function submit_signup(event){
+            event.preventDefault(); // prevent form refresh
+            let pass = document.getElementById("password").value;
+            let cpass = document.getElementById("confirm_password").value;
+
+            if(pass !== cpass){
+                alert("Passwords do not match!");
+            } else {
+                alert("Signup Successful!");
+                // here you can add code to save user data
+            }
+        }
+
+       function backToLogin(){
+    window.location = "validation_form.html";  // ✅ correct file name
+}
+    </script>
+</body>
+</html>

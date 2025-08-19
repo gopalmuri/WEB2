@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function age(age){
+                if(age<18){
+                    throw new Error("you are not eligible for voting")
+                }
+                return "you are eligible for voting"
+            }
+          try{
+            let a =age(2)
+            console.log(a)
+           
+          }catch(error){
+            console.log(error)
+          }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // try{
+        //    let num ;
+        //    throw new Error("this is the error message")
+            
+        // }catch(error){
+        //     console.log(error.message)
+        // }finally{
+        //     console.log("hellow orld")
+        // }
+
+        
+    </script>        
+</body>
+</html>
