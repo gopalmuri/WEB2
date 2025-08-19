@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+             font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .example {
+            width: 500px;
+            height: 200px;
+            border: 5px solid #e20d0d2e;
+            margin-bottom: 30px;
+            color: rgb(0, 0, 0);
+            padding: 10px;
+        }
+
+        .bg-color {
+            background-color: teal;
+
+        }
+
+        .bg-image {
+            padding: 10px;
+            background-image: url("https://picsum.photos/200/300?grayscale");
+        }
+
+        .bg-repeat {
+            background-image: url("https://picsum.photos/id/237/200/300");
+            background-repeat: repeat-x;
+        }
+
+        .bg-positon {
+            background-image: url("https://picsum.photos/id/237/200/300");
+            background-repeat: no-repeat;
+            background-position: center center;
+
+        }
+
+        .bg-attachment {
+            background-image: url("https://picsum.photos/id/237/200/300");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: scroll;
+        }
+
+        .bg-shorthand {
+            background: yellow url("https://picsum.photos/id/237/200/300") no-repeat right bottom fixed;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS2 background Property example</h1>
+    <div class="example bg-color">background color</div>
+    <div class="example bg-image">background image</div>
+    <div class="example bg-position">background position</div>
+
+    <div class="example bg-repeat">background repeat</div>
+    <div class="example bg-attachment">background attachement</div>
+    <div class="example bg-shorthand">bg-shorthand Property</div>
+    <p>Scroll down to see the fixed background in action</p>
+    <div style="height: 500px;"></div>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        body>div{
+            width:100px;
+            height: 216.86px;
+            border: 2px solid rgb(0, 0, 0);
+            display: grid;
+            justify-content: center;
+            border-radius:3px;
+            align-items: center;background-color: rgb(127, 118, 108);
+        }
+        div>div{
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            border-radius: 50%;
+            margin: 10px;
+        }
+        .a{
+            background-color: rgb(235, 16, 16);
+        }
+        .b{
+            background-color: yellow;
+        }
+        .c{
+            background-color:green;
+        }
+        div>div:hover{
+            opacity: 0.4;
+        }
+        .d{
+            border-radius: 0%;
+        }
+        span{
+            border: 2px solid rgb(0, 0, 0);
+            width: 20px;
+            height: 300px;
+            margin: auto;
+            margin-top: 4px;background-color: rgb(23, 23, 23);
+            border-top-left-radius: 4px;
+            border-top-right-radius:4px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <span> </span>
+    </div>
+</body>
+</html>

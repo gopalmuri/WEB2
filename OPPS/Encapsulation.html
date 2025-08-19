@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Encapsulation Examples</h2>
+    <script>
+        class BankAccount {
+            #balance = 0
+            deposit(amount) {
+                this.#balance += amount;
+                getbalance()
+                {
+                    return this.#balance;
+                }
+            }
+        }
+
+        const a = new BankAccount();
+        a.deposit(1000)
+        document.write("bank balance" + a.getbalance());
+
+        function create() {
+            let count = 0;
+            return {
+                increment() {
+                    count++;
+                },
+            getCount() {
+                    return count;
+                }
+            }
+        }
+        const counter = create();
+        count.increment();
+        document.write("<p>Counter value:" + count.getCount() + "</p>")
+    </script>
+</body>
+
+</html>
