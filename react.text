@@ -1,0 +1,11 @@
+process of the setting up the react
+step1=> create project name like react
+step2=>open the react and then type the cmd in that project
+step3=>nmp init -y run this one
+step4=>nmp create vite
+step5=>give any project name
+step6=>select react 
+step7=>select the javascript.js
+step8=>now run this commands cd vite-project
+nmp install
+npm run dev
